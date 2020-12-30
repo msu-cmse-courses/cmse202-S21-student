@@ -1,4 +1,4 @@
-# CMSE 202: Computational Modeling and Data Analysis 2
+# CMSE 202: Computational Modeling and Data Analysis II
 ## Spring 2021
 
 This is the **student Git repository** for CMSE 202. It contains the core materials for the course. This includes (in various directories):
