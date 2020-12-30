@@ -42,30 +42,23 @@ Assistant Professor, Department of Computational Mathematics, Science & Engineer
 
 ---  
 
-### Teaching Assistants NEED TO UPDATE
+### Teaching Assistants
 
-Ningyu Sha (Section 001),
-[shaningy@msu.edu](mailto:shaningy@msu.edu)
+CJ Llorente (Section 002),
+[llorente@msu.edu@msu.edu](mailto:llorente@msu.edu)
 
-Rui Zhang (Section 002),
-[zhangr60@msu.edu](mailto:zhangr60@msu.edu)
+Luis Polanco (Section 003),
+[polanco2@msu.edu](mailto:polanco2@msu.edu)
 
-Sarah McGuire (Section 003),
-[mcgui176@msu.edu](mailto:mcgui176@msu.edu)
-
-Nathan Haut (Section 004),
-[hautnath@msu.edu](mailto:hautnath@msu.edu)
-
-Matthew Piekenbrock (Section 006),
-[piekenbr@msu.edu](mailto:piekenbr@msu.edu)
-
-Emily Bolger (Section 007),
-[bolgerem@msu.edu](mailto:bolgerem@msu.edu)  
+Anna Yannakopoulos (Section 004),
+[yannakop@msu.edu](mailto:yannakop@msu.edu)
 
 ---
 
-### Learning Assistants NEED TO UPDATE
-Jennifer Abel (001), Adam Dion (001), Annalise Cornell (002), Sam Tracht (002), Carlie Couzens (003), Dylan Mather (003), Nicole Keller (004), Bella Said (004), Kevin Heim (006), Lexi McFall (006), Alice Krupczak (007), Madeline Martin (007), and Emily Jevarjian (008).
+### Learning Assistants
+* Amanda Bowerman and Carlie Couzens (002)
+* Brandon McIntyre and Jack Haas (003)
+* Emma Brann and Ian Barder (004)
 
 ---  
 
