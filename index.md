@@ -7,10 +7,10 @@ Here are some quick links to important course content:
 
 *  [Course Syllabus](https://docs.google.com/document/d/e/2PACX-1vRBse-tzqOOb8LMWHDCDXpam6Z0v_ynEORPALQMF-8ysVDoRoRtMlLWjXR5s4ln__fXYKR_5IGUqQm9/pub) [[PDF version](/course_documents/CMSE202_Syllabus_Spring2021.pdf)]
 
-*  [Course Calendar](https://whereisit.com) [[PDF version](/course_documents/CMSE202-S21-Schedule.pdf)]
+*  [Course Calendar](UPDATE) [[PDF version](/course_documents/CMSE202-S21-Schedule.pdf)]
 
 *  [Office Hours Schedule](https://cmse.msu.edu/cmse202-office-hours)
-	* The Zoom room for TA/LA help room hours is [here](https://whereisit.com).
+	* The Zoom room for TA/LA help room hours is [here](UPDATE).
 	* Contact your course instructor for their Zoom room for office hours.  
 
 * [Software Setup Guide](/course_documents/SoftwareSetupGuide.pdf)
