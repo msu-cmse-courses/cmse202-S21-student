@@ -56,9 +56,9 @@ Anna Yannakopoulos (Section 004),
 ---
 
 ### Learning Assistants
-* Amanda Bowerman and Carlie Couzens (002)
-* Brandon McIntyre and Jack Haas (003)
-* Emma Brann and Ian Barder (004)
+* Amanda Bowerman and Carlie Couzens (Section 002)
+* Brandon McIntyre and Jack Haas (Section 003)
+* Emma Brann and Ian Barder (Section 004)
 
 ---  
 
