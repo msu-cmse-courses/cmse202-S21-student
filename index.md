@@ -45,7 +45,7 @@ Assistant Professor, Department of Computational Mathematics, Science & Engineer
 ### Teaching Assistants
 
 CJ Llorente (Section 002),
-[llorente@msu.edu@msu.edu](mailto:llorente@msu.edu)
+[llorente@msu.edu](mailto:llorente@msu.edu)
 
 Luis Polanco (Section 003),
 [polanco2@msu.edu](mailto:polanco2@msu.edu)
