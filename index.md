@@ -13,7 +13,7 @@ Here are some quick links to important course content:
 	* The Zoom room for TA/LA help room hours is [here](https://msu.zoom.us/j/94400474949).
 	* Contact your course instructor for their Zoom room for office hours.  
 
-* [Software Setup Guide](/course_documents/SoftwareSetupGuide.pdf)
+* [Software Setup Guide](/course_documents/SoftwareSetupGuide.html)
 
 Course assignments will be distributed via [Desire 2 Learn](https://d2l.msu.edu/).
 
