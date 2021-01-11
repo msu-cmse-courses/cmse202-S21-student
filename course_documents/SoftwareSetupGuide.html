@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>SoftwareSetupGuide</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">CMSE 202 - Spring 2021 <br> Software Setup Guide</h1>
+
+<p>As this is a course in computational modeling and data science, you will be completing all of your assignments using your computer! However, in order to do so there are a number of things you need to set up before the course starts. If you run into issues during this setup process make sure to document the error you encountered and send an email to your Professor to let them know that you ran into a problem.</p>
+
+<p><strong>MAKE SURE TO COMPLETE ALL OF THE SECTIONS LISTED IN THIS DOCUMENT BEFORE YOU COME TO CLASS. Start with the section on &ldquo;Setting up important accounts&rdquo; and then move on to &ldquo;Setting up important software&rdquo; (if you want to be able to run your code locally on your computer without having to rely on internet-based resources).</strong></p>
+
+<hr>
+
+<h1 id="toc_1">Table of Contents</h1>
+
+<h3 id="toc_2"><a href="#accounts">Setting up important accounts</a></h3>
+
+<ul>
+<li><a href="#jupyterhub">MSU&rsquo;s JupyterHub Interface</a>
+
+<ul>
+<li><a href="#connecting">Instructions for connecting to the JupyterHub serve</a></li>
+<li><a href="#uploadnotebook">Instructions for getting notebook files onto JupyterHub</a></li>
+<li><a href="#downloadnotebook">Instructions for downloading notebooks from JupyterHub to turn them in</a></li>
+</ul></li>
+<li><a href="#slack">Course Communication with Slack</a>
+
+<ul>
+<li><a href="#slackguidelines">Slack usage guidelines</a></li>
+</ul></li>
+<li><a href="#github">Setting up a student GitHub account</a></li>
+</ul>
+
+<h3 id="toc_3"><a href="#software">Setting up important software (if you want to run your code locally)</a></h3>
+
+<ul>
+<li><p><a href="#python">Installing Python</a></p>
+
+<ul>
+<li><a href="#update-anaconda">Updating a previous installation</a></li>
+<li><a href="#check-path">Checking that Python is available in your command line path</a></li>
+<li><a href="#install-anaconda">If you don&rsquo;t have a fully functioning, up-to-date version</a>
+
+<ul>
+<li><a href="#anaconda-windows">Installing Anaconda for Windows</a></li>
+<li><a href="#anaconda-mac">Installing Anaconda for Mac</a></li>
+</ul></li>
+</ul></li>
+<li><p><a href="#git">Using Git for version control</a></p>
+
+<ul>
+<li> <a href="#git-windows">Installing Git if you have a Windows computer</a></li>
+<li> <a href="#git-mac">Installing Git if you have a Mac computer</a>
+
+<ul>
+<li><a href="#git-mac-install">Download and install the newest version of Git for Mac</a></li>
+</ul></li>
+<li> <a href="#git-linux">Installing Git if you have a Linux computer</a></li>
+</ul></li>
+<li><p><a href="#atom">Installing the Atom text editor</a></p></li>
+</ul>
+
+<hr>
+
+<p><a id="accounts"></a></p>
+
+<h1 id="toc_4">Setting up important accounts</h1>
+
+<hr>
+
+<p><a id="jupyterhub"></a></p>
+
+<h2 id="toc_5">MSU&rsquo;s JupyterHub Interface</h2>
+
+<p>Since it can be challenging for instructors to troubleshoot a wide range of computer issues remotely owing to variations in computer operating systems, user access, and hardware, <strong>you are expected to ensure that you can access the JupyterHub interface provided by the College of Engineering</strong>. Ultimately, it is up to you if you choose to use the JupyterHub server or your local Python installation for the assignments in this course, but if you run into issues with your local installation, the instructors will recommend that you switch to JupyterHub until you can troubleshoot your issues. In addition, some assigments may <strong>require</strong> that you use the JupyterHub server.</p>
+
+<p>The JupyterHub server hosted by the College of Engineering creates a virtual environment that allows you to run simple commands and host Jupyter notebooks. <strong>To make sure that you have access to this server, follow the directions below</strong>. If you have not previously used JupyterHub, note that there are extra steps involved that require that you upload and download you Jupyter notebooks to and from the JupyterHub server in order to turn them in on D2L &ndash; this may be different than your experience with using your local Python installation.</p>
+
+<p><a id="connecting"></a></p>
+
+<h3 id="toc_6">Instructions for connecting to the engineering JupyterHub server:</h3>
+
+<p>Every student enrolled in this class will be given an engineering computing account. If this is your first time using your Engineering account you will need to activate the account by going to the following website:</p>
+
+<p><a href="https://www.egr.msu.edu/decs/myaccount/?page=activate">https://www.egr.msu.edu/decs/myaccount/?page=activate</a></p>
+
+<p>Enter your MSU NetID. The initial password will be your APID with an @ on the end (example: A12345678@) and then you have to set a password that meets the requirements listed on the page. Verify the password. Then agree to the terms and Activate.</p>
+
+<p>Once your account is activated <strong>you can access the classroom JupyterHub server using the following instructions</strong>:</p>
+
+<ol>
+<li>Open up a web browser and go to the following URL: <a href="https://jupyterhub.egr.msu.edu">https://jupyterhub.egr.msu.edu</a> (if that one doesn&rsquo;t work for any reason, try <a href="https://jupyterhub2.egr.msu.edu">https://jupyterhub2.egr.msu.edu</a>. Feel free to use whichever one you want or whichever one happens to be functioning when you try.)</li>
+<li>Type your engineering login name. This will be your MSU NetID.</li>
+<li>Type your engineering (DECS account) password.</li>
+</ol>
+
+<p>If everything is working properly you will see the main “Files” windows in the Jupyter interface. </p>
+
+<p><em>If you <strong>ever</strong> run into an issue with accessing JupyterHub, contact <a href="mailto:jupyterhub@egr.msu.edu">jupyterhub@egr.msu.edu</a> for support.</em></p>
+
+<p>The following directions should serve as a reference for how you can go about uploading and downloading Jupyter notebooks and turning them in.</p>
+
+<p><a id="uploadnotebook"></a></p>
+
+<h4 id="toc_7">Instructions for getting Jupyter notebook files onto JupyterHub:</h4>
+
+<p>Jupyter notebooks (also referred to as IPython notebooks) are files that end with the .ipynb extension.  We will give you these files for all of your assignments, you will edit them and turn in the edited files in using the class Website.</p>
+
+<p>You can download the .ipynb assignment files from the class website (<a href="http://d2l.msu.edu">http://d2l.msu.edu</a>). Once you have an .ipynb file you can load it into Jupyter using the “upload” button on the main “Files” tab in the JupyterHub web interface. Hitting this button will cause a file browser window to open. Just navigate to your ipynb file (wherever you downloaded it to), select it, and hit the open button.</p>
+
+<p>Once you see your filename in the jupyter window you can just click on that name to start using that file.</p>
+
+<p><a id="downloadnotebook"></a></p>
+
+<h4 id="toc_8">Instructions for downloading Jupyter notebooks from JupyterHub and turning them in:</h4>
+
+<p>When you are finished editing your Jupyter notebook and are ready to turn it in you will need to download the .ipynb file from the JupyterHub interface.</p>
+
+<ol>
+<li><p>With the notebook file open in JupyterHub, go to the “File” menu, select the “Download as” menu option and then choose “Notebook (.ipynb)”</p></li>
+<li><p>Pick a place to save the file (e.g. the desktop, your downloads folder, or a special folder for CMSE 202 content).  </p></li>
+<li><p>Make sure you keep a copy of the .ipynb file for your own records.</p></li>
+<li><p>Go to the Desire 2 Learn (<a href="http://d2l.msu.edu">http://d2l.msu.edu</a>) class website and upload the .ipynb file into the appropriate assignment folder.</p></li>
+</ol>
+
+<p><strong>NOTE</strong>:  Video versions of these instructions are available on the CMSE YouTube channel <a href="https://www.youtube.com/watch?v=l7mhi4ww6tY">here</a> and <a href="https://www.youtube.com/watch?v=5WSQnGmz3IA">here</a>.</p>
+
+<p><a id="slack"></a></p>
+
+<h2 id="toc_9">Course Communication with Slack</h2>
+
+<p>We will be using Slack (<a href="http://slack.com">http://slack.com</a>) as our means of communicating about course content as the semester progresses and to provide a space for you to ask questions and get help. We believe that this will provide an excellent avenue to have discussions not only with course instructors, TAs, and LAs, but also between you and your fellow classmates. In order to join the Slack team that we’ve created for the course you should complete the following steps:</p>
+
+<ol>
+<li>Go to <a href="https://cmse-courses.slack.com/signup">https://cmse-courses.slack.com/signup</a></li>
+<li>Once there, sign up using your @msu.edu email address.
+<strong>Important</strong>: When you create your account, use your   MSU NetID as your user name. This will make it easier for your instructors to recognize you within the Slack channels.</li>
+</ol>
+
+<p>Once you&rsquo;ve joined the CMSE Courses Slack team, you&rsquo;ll need to <strong>add yourself to two channels</strong>. The first channel you should add yourself to is <strong>&ldquo;cmse202-s21-help&rdquo;</strong>. The second one you should add yourself to is <strong>&ldquo;cmse202-###-s21&rdquo;</strong> where &ldquo;###&rdquo; corresponds to the section of the course that you are enrolled in. To add yourself to these channels, click on &ldquo;Channels&rdquo; and search for the appropriate channel.</p>
+
+<p>The &ldquo;help&rdquo; channel will be the place to go for any questions about assignments in the course or issues you&rsquo;re having with your computer or Python. We encourage you to help out other classmates when you can! The section-specific channel will be used by your instructor for important messages relevant only to your section of the course.</p>
+
+<p><a id="slackguidelines"></a></p>
+
+<h3 id="toc_10">Slack usage guidelines</h3>
+
+<p>In order to ensure that Slack is a useful tool that does not become overly time-consuming for the course instructors, TAs, or LAs, we have a list of rules for how we expect you to use Slack. They are:</p>
+
+<ol>
+<li><strong>Do not post your solutions to out-of-class assignments directly into Slack unless prompted by an instructor</strong>.</li>
+<li>Before you ask a question, be sure to check the other section channels to see if the question has already been answered.</li>
+<li>The Slack team is primarily for you, the students, so help each other.</li>
+<li>The TAs and LAs will monitor the channels, but will defer to the students to work through things. They will only enter a conversation if students are going down the wrong path and/or there are too few other students involved. However, you should not expect that the TAs or LAs will always be available. The TAs and LAs will spend a limited amount of time “logged in” to Slack and we ask that you be respectful of their time.</li>
+<li>Slack is meant to be used to help you when you are stuck with a minor issue. If you are having major issues or trouble understanding the concept, go to office/helproom hours.  Office/helproom hours are meant for more in-depth discussions of course content.</li>
+<li>Course instructors will monitor Slack when time permits, but might only pop on to examine progress. While they may offer help, it is not recommended that you rely on getting that help on short timescales. Instructors will not respond to the same student twice within a 30 minute time interval.</li>
+<li>Only in rare cases should you contact an instructor through a private channel. But, if you are struggling, feel free to use this option.</li>
+<li>Be courteous to everyone on Slack. Students who are being rude or who are excessively posting might be banned from posting on the course Slack channel.</li>
+</ol>
+
+<p><a id="github"></a></p>
+
+<h2 id="toc_11">Setting up a student GitHub account</h2>
+
+<p>From time to time in the course, you may be expected create, use, and share GitHub repositories with your instructors and your fellow classmates. If you don&rsquo;t know what a GitHub repository is, don&rsquo;t worry! You&rsquo;ll learn about Git repositories and how to host them on GitHub in class.</p>
+
+<p>In order to do this, you need to set up an account on <a href="https://github.com/">GitHub</a>. Go to <a href="https://github.com/">https://github.com/</a> and sign up for an account <strong>using your &ldquo;@msu.edu&rdquo; email address</strong>. It is important that you sign up using your &ldquo;@msu.edu&rdquo; account so that you can get the <em>Student Pack</em>, which gives you special access to software and unlimited private repositories. The student pack can be found <a href="https://education.github.com/pack">here</a>. <strong>You are expected to request access to the Student Pack before you come to class.</strong> Once you have a GitHub account, the instructors will be able to give you access to any important course GitHub repositories.</p>
+
+<hr>
+
+<p><a id="software"></a></p>
+
+<h1 id="toc_12">Setting up important software <br> (if you want to run your code locally)</h1>
+
+<hr>
+
+<p><a id="python"></a></p>
+
+<h2 id="toc_13">Installing Python for this course</h2>
+
+<p>If you choose to use a local Python installation for this course (you&rsquo;re absolutely welcome to!), you need to have an <strong>Anaconda</strong> Python installation that is both <strong>functioning</strong> and <strong>current</strong>. If you have a past installation, you are expected to make sure it is up-to-date. You can update your current Anaconda install by following <a href="#update-anaconda">these directions</a>.</p>
+
+<p>In addition to making sure your installation is updated, you should also ensure that the Anaconda installation is in your default path. You can check that this is true by following <a href="#check-path">these directions</a></p>
+
+<p>If you don&rsquo;t already have Anaconda installed or if you already had Anaconda, but you couldn&rsquo;t get the update to work or ensure that Anaconda is in your path, you should install a fresh version of Anaconda following <a href="#install-anaconda">these directions</a>.</p>
+
+<p><a id="update-anaconda"></a></p>
+
+<h3 id="toc_14">Updating a previous installation</h3>
+
+<p><a id="update-windows"></a></p>
+
+<h4 id="toc_15">Updating on Windows (<a href="#update-mac">jump to Mac directions</a>)</h4>
+
+<ol>
+<li><p>Make sure you are connected to the internet</p></li>
+<li><p>Find your Anaconda prompt and update Anaconda.</p>
+
+<p><img src="./images/prompt.png" alt="prompt" width="500"/>  On keyboard press <kbd> Windows-key </kbd> or simply use the search bar on the taskbar if it is visible. Search <code>Anaconda Prompt</code> and right-click on the search result and select &ldquo;Run as administrator&rdquo;.  </p>
+
+<p><img src="./images/update01.png" alt="update" width="500"/>  Type in the command <code>conda update --all</code> and press <code>Enter</code>. This command will update anaconda.  </p>
+
+<p><img src="./images/update02.png" alt="confirm" width="500"/>  To continue type <code>y</code> and press enter.  </p>
+
+<p><img src="./images/update03.png" alt="exit" width="500"/>  If all goes well you should be all updated. To close out of the terminal type <code>exit</code> and press enter. </p></li>
+</ol>
+
+<p>Now double-check that Python is <a href="#check-path">available in your commandline path</a>.</p>
+
+<p><a id="update-mac"></a></p>
+
+<h4 id="toc_16">Updating on a Mac <a href="#update-windows">(jump to Windows directions</a>)</h4>
+
+<ol>
+<li>Make sure you are connected to the internet<br></li>
+<li><p>Find your terminal and update Anaconda.</p>
+
+<p><img src="./images_mac/cmd_update.png" alt="cmd_update" width="500"/> Using Spotlight by pressing <kbd> command </kbd> + <kbd> space-bar </kbd> or simply use the search bar in the top right corner search <code>terminal</code> and press <code>Enter</code>. Then type in the command <code>conda update --all</code> and press <code>Enter</code>. This command will update anaconda.  </p>
+
+<p><img src="./images_mac/update_y.png" alt="update_y" width="500"/> To continue type <code>y</code> and press enter.  </p>
+
+<p><img src="./images_mac/update_done.png" alt="update_done" width="500"/> If all goes well you should be all updated. </p></li>
+</ol>
+
+<p><a id="check-path"></a></p>
+
+<h3 id="toc_17">Checking that Python is available in your command line path</h3>
+
+<p><a id="check-path-windows"></a></p>
+
+<h4 id="toc_18">Checking your path on Windows (<a href="#check-path-mac">jump to Mac directions</a>)</h4>
+
+<ol>
+<li><p>Make sure Anaconda is already installed on your system.</p></li>
+<li><p>Open up any terminal besides anaconda prompt and run Jupyter Notebook. </p>
+
+<p><img src="./images/run.png" alt="run" width="500"/> On keyboard press <kbd> Windows-key </kbd> + <kbd> r </kbd> or simply use the search bar on the taskbar if it is visible. Enter <code>cmd</code> and press enter. This will open up the Windows Command terminal.  </p>
+
+<p><img src="./images/cmd_jupyter.png" alt="jupyter" width="500"/>  Type in <code>jupyter notebook</code> and press <code>Enter</code>. This should launch a jupyter notebook tab on a web browser.</p>
+
+<p><img src="./images/exit01.png" alt="exit01" width="500"/>  </p>
+
+<p><img src="./images/exit02.png" alt="exit02" width="500"/>  To exit jupyter notebook close the tab on the web browser, and go to the terminal window and type <kbd> Ctrl </kbd> + <kbd> c </kbd> twice in a row.  </p></li>
+</ol>
+
+<p><a id="check-path-mac"></a></p>
+
+<h4 id="toc_19">Checking your path on a Mac (<a href="#check-path-windows">jump to Windows directions</a>)</h4>
+
+<ol>
+<li><p>Make sure Anaconda is already installed on your system.</p></li>
+<li><p>Open up the terminal and run Jupyter Notebook.</p>
+
+<p><img src="./images_mac/cmd_jupyter.png" alt="cmd_jupyter" width="500"/> Using Spotlight by pressing <kbd> command </kbd> + <kbd> space-bar </kbd> or simply use the search bar in the top right corner search <code>terminal</code> and press <code>Enter</code>. Then type in <code>jupyter notebook</code> and press <code>Enter</code>. </p>
+
+<p><img src="./images_mac/jup.png" alt="jup" width="750"/>  This should launch a jupyter notebook tab on a web browser and the terminal should look like this.</p>
+
+<p><img src="./images_mac/jup_close.png" alt="jup_close" width="500"/>  To exit jupyter notebook close the tab on the web browser, and go to the terminal window and type <kbd> control </kbd> + <kbd> c </kbd> twice in a row. </p></li>
+</ol>
+
+<p><a id="install-anaconda"></a></p>
+
+<h3 id="toc_20">If you don&rsquo;t having a fully functioning up-to-date installation of Anaconda Python</h3>
+
+<p>If you have a Windows computer, jump to <a href="#anaconda-windows">this section</a> and follow the instructions.</p>
+
+<p>If you have a Mac, jump to <a href="#anaconda-mac">this section</a> and follow the instructions.</p>
+
+<p>If you have a Linux computer and aren&rsquo;t sure how to go about installing Anaconda, contact you instructor.</p>
+
+<p><a id="anaconda-windows"></a></p>
+
+<h4 id="toc_21">Installing Anaconda for Windows</h4>
+
+<p>Instructions for downloading and installing Anaconda (Python 3.8.x):</p>
+
+<ol>
+<li><p>Go to the <a href="https://www.anaconda.com/download/">Anaconda Download webpage:</a></p></li>
+<li><p>Use the <code>download</code> button under the <code>Your data science toolkit</code> (or just scroll until you see <code>Anaconda Installers</code>)</p>
+
+<p><img src="./images/anaconda_download.png" alt="Anaconda_download" width="500"/></p></li>
+<li><p>Download the Python 3.8 version, you&rsquo;ll notice there is a 32-bit and 64-bit version. If you are unsure which you should download, you&rsquo;ll most likely want the 64-bit version, but if you want to be sure, follow the instructions below.</p>
+
+<p>a. On keyboard press <kbd> Windows-key </kbd> or simply use the search bar on the taskbar if it is visible.  </p>
+
+<p>b. Search <code>System Information</code> and click on the search result.  </p>
+
+<p><img src="./images/system.png" alt="system" width="500"/>  </p>
+
+<p>c. Look for the line called <code>System Type</code></p>
+
+<ul>
+<li><p>If it reads <code>x64-based PC</code> you have a 64-bit system and you should download 64-bit Anaconda.</p></li>
+<li><p>If it reads <code>x86-based PC</code> you have a 32-bit system and you should download 32-bit Anaconda.</p></li>
+</ul>
+
+<p><img src="./images/sys.png" alt="x64" width="500"/>  </p></li>
+<li><p>After downloading, run the Anaconda Installer Executable. Say <code>yes</code> to any warnings.</p>
+
+<p><img src="./images/01.png" alt="Setup" width="500"/>    </p>
+
+<p><img src="./images/02.png" alt="License Agreement" width="500"/>    </p>
+
+<p><img src="./images/03.png" alt="Permission" width="500"/>  Any option here is ok, change to <code>All Users</code> if you want to install to all accounts on your PC. </p>
+
+<p><img src="./images/04.png" alt="location" width="500"/>  <em>Change the Destination folder at your own risk</em> If troubles creep up later in class with using Anaconda, this might make the issues harder to fix. If you do change location, make sure it remains on the drive your windows installation is on.  </p>
+
+<p><img src="./images/05.png" alt="install" width="500"/> <strong>Make sure to enable this option</strong> This is required for software this class uses.  </p>
+
+<p><img src="./images/06.png" alt="during" width="500"/>  Installation may take awhile, it may stay at this screen for awhile. Be patient.  </p>
+
+<p><img src="./images/07.png" alt="complete" width="500"/>   </p>
+
+<p><img src="./images/08.png" alt="almost" width="500"/>  </p>
+
+<p><img src="./images/09a.png" alt="finished" width="500"/>  Any option here is okay, if you wanna get a feel for the things Anaconda can do, feel free to keep those checkboxes selected.  </p></li>
+<li><p>Open the command line program on your computer.</p>
+
+<p>a. On keyboard press <kbd> Windows-key </kbd> + <kbd> r </kbd> or simply use the search bar on the taskbar if it is visible.</p>
+
+<p>b. Enter <code>cmd</code> and press enter.</p>
+
+<p><img src="./images/run.png" alt="run"></p></li>
+<li><p>Type <code>jupyter notebook</code> in the command line and hit enter.</p>
+
+<p><img src="./images/cmd_jupyter.png" alt="jupyter" width="500"/> If everything goes correctly, a browser window should open up with the Jupyter interface running. If things don’t work, don’t worry, we will help you get started.</p>
+
+<p><img src="./images/exit01.png" alt="exit01" width="500"/> To exit jupyter notebook close the tab on the web browser, and go to the cmd window and type <kbd> Ctrl </kbd> + <kbd> c </kbd> twice in a row.</p>
+
+<p><img src="./images/exit02.png" alt="exit02" width="500"/> To close out of the terminal type <code>exit</code> and press enter.</p></li>
+</ol>
+
+<p><em>If for any reason you still don&rsquo;t have Anaconda functioning on your computer and you&rsquo;d like to get it working, contact you instructor!</em></p>
+
+<p><a id="anaconda-mac"></a></p>
+
+<h4 id="toc_22">Installing Anaconda for Mac</h4>
+
+<p>Instructions for downloading Anaconda (Python 3.7.x):</p>
+
+<ol>
+<li><p>Go to the <a href="https://www.anaconda.com/download/">Anaconda Download webpage:</a></p></li>
+<li><p>Use the <code>download</code> button under the <code>Your data science toolkit</code> (or just scroll until you see <code>Anaconda Installers</code>)</p>
+
+<p><img src="./images_mac/anaconda_download.png" alt="Anaconda_download" width="500"/></p></li>
+<li><p>Download the Python 3.7 version, you&rsquo;ll notice there is a &ldquo;Graphical&rdquo; and &ldquo;Command Line&rdquo; installer. This guide covers the Graphical, but feel free to use the Command Line if you wish.</p></li>
+<li><p>After downloading, run the <code>Anaconda3</code> installer that popped into the dock (or you can open it from the <code>Downloads</code> folder as well).</p>
+
+<p><img src="./images_mac/agree.png" alt="agree" width="500"/> Press the <code>Continue</code> button  </p>
+
+<p><img src="./images_mac/welcome.png" alt="welcome" width="500"/> Press the <code>Continue</code> button.   </p>
+
+<p><img src="./images_mac/read.png" alt="read" width="500"/> Press the <code>Continue</code> button.   </p>
+
+<p><img src="./images_mac/license.png" alt="license" width="500"/> Press the <code>Continue</code> button.</p>
+
+<p><img src="./images_mac/license_agree.png" alt="license_agree" width="500"/> Press the <code>Agree</code> button. </p>
+
+<p><img src="./images_mac/destination.png" alt="destination" width="500"/> You may notice that there is an error if you are running macOS Catalina or higher. We will want to change the destination for both the sake of macOS Catalina users, and those that are running macOS Mojave or sooner in case if you ever do update to macOS Catalina. Click on <code>Install on a specific disk...</code></p>
+
+<p><img src="./images_mac/drive.png" alt="drive" width="500"/> Make sure to click and select your main harddrive (You may only have one if no other storage device is connected to the compiter). Then click the <code>Choose Folder...</code> button.</p>
+
+<p><img src="./images_mac/home.png" alt="home" width="500"/> Then click on the <code>Users</code> -&gt; <code>[YOUR_USERNAME]</code>. The <code>[YOUR_USERNAME]</code> should be the username of the account you are logged into. In my case this is <code>brandonmcintyre</code>. Then click in the bottom left hand corner on the <code>New Folder</code> button.</p>
+
+<p><img src="./images_mac/new.png" alt="new" width="500"/> You can enter any name you want for the folder as long as it does not have a space in it. For this tutorial we will use <code>me</code>. Then click <code>Create</code>.</p>
+
+<p><img src="./images_mac/choose.png" alt="choose" width="500"/> If all went well the folder should be created and should be automatically selected. Now click the <code>Choose</code> button.</p>
+
+<p><img src="./images_mac/cont.png" alt="cont" width="500"/> Press the <code>Continue</code> button.</p>
+
+<p><img src="./images_mac/install.png" alt="install" width="500"/>  Press the <code>Install</code> button.</p>
+
+<p><img src="./images_mac/password.png" alt="password" width="500"/>  Enter your password then click <code>Install Software</code>.  </p>
+
+<p><img src="./images_mac/during.png" alt="during" width="500"/> This may take a moment to install.</p>
+
+<p><img src="./images_mac/allow.png" alt="allow" width="500"/> Press <code>OK</code> button to allow.  </p>
+
+<p><img src="./images_mac/pycharm.png" alt="pycharm" width="500"/> Press the <code>Continue</code> button.</p>
+
+<p><img src="./images_mac/finished.png" alt="finished" width="500"/> Then press the <code>Close</code> button. Then to finish, press <code>Move to Trash</code> to delete the installer.  </p></li>
+<li><p>Open terminal on your computer by using Spotlight by pressing <kbd> command </kbd> + <kbd> space-bar </kbd> or simply use the search bar in the top right corner search <code>terminal</code> and press <code>Enter</code>. Then type <code>jupyter notebook</code> in the command line and hit enter.</p>
+
+<p><img src="./images_mac/cmd_jupyter.png" alt="cmd_jupyter" width="500"/>   </p>
+
+<p><img src="./images_mac/jup.png" alt="jup" width="750"/> This should launch a jupyter notebook tab on a web browser and the terminal should look like this.  </p>
+
+<p><img src="./images_mac/jup_close.png" alt="jup_close" width="500"/> To exit jupyter notebook close the tab on the web browser, and go to the terminal window and type <kbd> control </kbd> + <kbd> c </kbd> twice in a row. Now you can close the terminal.   </p></li>
+</ol>
+
+<p><em>If for any reason you still don&rsquo;t have Anaconda functioning on your computer and you&rsquo;d like to get it working, contact you instructor!</em></p>
+
+<p><a id="git"></a></p>
+
+<h2 id="toc_23">Using Git for version control</h2>
+
+<p>From time to time, we&rsquo;ll be using Git in this course to keep track of changes to our code. Keeping track of the revision history of code called &ldquo;version control&rdquo;, we&rsquo;ll be discussing this in more detail in class. You&rsquo;ll need to make sure that you have Git installed on your computer. Follow the steps below based on the type of computer you&rsquo;re using.</p>
+
+<p>When these situations arise, it will be possible to use the MSU JupyterHub interface, but if you would like to have a local installation of Git on your computer, following the directions below.</p>
+
+<p>Use <a href="#git-windows">these directions</a> if you have a Windows machine.</p>
+
+<p><a href="#git-mac">These directions</a> if you have a Mac.</p>
+
+<p>And <a href="#git-linux">these directions</a> if you have a Linux machine.</p>
+
+<p><a id="git-windows"></a></p>
+
+<h3 id="toc_24">Installing Git if you have a <strong>Windows</strong> computer:</h3>
+
+<p>If you have Windows 10 and would like to experiment with using the Windows Subystem for Linux (WSL) during this course, contact your instructor for a more detailed guide on how you can try to set everything up using that functionality. However, this is not strictly necessary and you can simply follow the directions below to set up Git within the standard Windows operating system.</p>
+
+<ol>
+<li>Go to the <a href="https://git-scm.com/downloads">Git Download webpage</a>, and download the Windows version.</li>
+<li><p>After downloading, run the Git exectuable file. Say <code>yes</code> to any warnings.</p>
+
+<p><img src="./images/g01.png" alt="license" width="500"/>  </p>
+
+<p><img src="./images/g02.png" alt="location" width="500"/> It is suggested to leave this alone, however, if you do want to change the location, make sure it is in the same drive that Anaconda is installed in.  </p>
+
+<p><img src="./images/g03.png" alt="desktop" width="500"/>  If you click this option, a shortcut linking to the terminal will be placed on your desktop. Alternatively, once the terminal is started you can pin the program to your taskbar, or search for it with <kbd> Windows-key </kbd> </p>
+
+<p><img src="./images/g04.png" alt="start" width="500"/>  </p>
+
+<p><img src="./images/g05.png" alt="text" width="500"/>  Any text editor can be used here, however, if you have never used a command line text editor just leave it to Vim for now. We will cover text editors later.  </p>
+
+<p><img src="./images/g06a.png" alt="PATH" width="500"/>  Either option 2 or 3 is ok. It is recommend to use option 2, however, if you want unix-commands to be avalible in native command prompts (like MS-DOS or powershell) you can select option 3.</p>
+
+<p><img src="./images/g07.png" alt="SSL" width="500"/>  </p>
+
+<p><img src="./images/g08.png" alt="line" width="500"/>  </p>
+
+<p><img src="./images/g09.png" alt="mintty" width="500"/>  </p>
+
+<p><img src="./images/g10.png" alt="pull" width="500"/>  </p>
+
+<p><img src="./images/g11.png" alt="extra1" width="500"/>  </p>
+
+<p><img src="./images/g12.png" alt="extra2" width="500"/>  </p>
+
+<p><img src="./images/g13.png" alt="finished" width="500"/>  Make sure to check the box that says <code>Launch Git Bash</code>. This is helpful for the next step. If you accidently do not check the box, you can always press <kbd> Windows-key </kbd> and search for Git Bash</p></li>
+</ol>
+
+<p><a id="conda_bash"></a></p>
+
+<h4 id="toc_25">Adding Anaconda functionality to Git-Bash</h4>
+
+<p>Next we are going to add Anaconda&rsquo;s python to our Git-bash terminal. This is crucial as this is what will allow us to run python from the terminal, and install new packages into our Andacona&rsquo;s python. We will first add Andaconda to our PATH, and then &ldquo;create an alias&rdquo; to run python from Git-bash.</p>
+
+<ol>
+<li><p>Find your Anaconda prompt (If needed, see above for screenshots). To do this, on the keyboard press <kbd> Windows-key </kbd> or simply use the search bar on the taskbar if it is visible. Search <code>Anaconda Prompt</code> and click on the search result.</p></li>
+<li><p>Type <code>where python</code> and press enter.</p>
+
+<p><img src="./images/a01.png" alt="python_location" width="500"/>  Notice that there may be two locations. We are looking for the location that has <code>anaconda3</code> in the location. Keep this window open while we switch over to using the Git Bash terminal.</p></li>
+<li><p>Using Git Bash (which should be open from our last step), navigate to what is known as your home directory by typing <code>cd ~</code> in the terminal. (Notice how the symbols changed from <code>/</code> known as the &ldquo;root&rdquo; directory to <code>~</code> which is our &ldquo;home&rdquo; directory) (It is also possible you may load into your home directory automatically as well)</p>
+
+<p><img src="./images/a02.png" alt="home" width="500"/>  </p></li>
+<li><p>Using a text editor, the <code>.bashrc</code> file will need to modified to include the path to Anconda&rsquo;s python using the <code>alias</code> feature. It is most likely that you will not already have the <code>.bashrc</code> so the file will need to be created. (For reference the <code>.bashrc</code> file is a file that contains settings that is ran everytime the terminal is started)</p>
+
+<p><img src="./images/a03.png" alt="vi" width="500"/>  Type <code>vi .bashrc</code> into the Git Bash terminal. This will open up/create the <code>.bashrc</code> with a command line text editor called Vim. </p>
+
+<p><img src="./images/a04.png" alt="insert" width="500"/>  Press (lowercase)<code>i</code>. You will notice that this bottom left corner will go from <em>blank</em> to saying <code>-- INSERT --</code>. This changed the mode from &ldquo;Command Mode&rdquo; to &ldquo;Insert Mode&rdquo;. Command Mode is where you can run commands such as save, exit, and the like. Insert mode is where you can type into the file and edit its contents.</p>
+
+<p><img src="./images/a05.png" alt="alias">  Now we will use the location found when using <code>where python</code> in Anaconda Prompt (there may be two locations, use the one with <code>Anconda3</code> in the location path) to create an alias for running python from the terminal. The general format is <code>alias python=&#39;winpty [PATH FROM &quot;WHERE PYTHON&quot;]&#39;</code>.</p>
+
+<p>To make this a little easier would be to copy and paste from the Anconda Prompt. First we need to type <code>alias python=&#39;winpty</code> into the Git Bash terminal.</p>
+
+<p>Then, to copy the &ldquo;Anaconda3&rdquo; python path from Anaconda Prompt, use your mouse to <em>left-click</em> and drag over the text in Anaconda Prompt to highlight it, and then <em>right-click</em> on the highlighted text. This should make the highlighting of the text disappear. This now means you have copied the text you just highlighted. </p>
+
+<p>Go over to the Git Bash terminal and <em>right-click</em> into the terminal. Now there should be an option to <code>Paste</code>, click that. Then make sure to type <code>&#39;</code> at the end of what you just copied. </p>
+
+<p>Next we are going to need to edit the location path from windows notation, to unix-like notation. To do this use the arrow-keys to move along the text, and change all back-slashes <code>\</code> to <code>/</code> forward-slashes. Then change <code>C:</code> to lowercase <code>/c</code>. Then you should have the correct alias.</p>
+
+<p><strong>(If you cannot get this method to work, simply type out the above alias by hand)</strong> </p>
+
+<p><img src="./images/a06.png" alt="Save" width="500"/>  To save and close the file we will need to return back to the &ldquo;Command Mode&rdquo; to do this press the <code>Esc</code> on your keyboard. You will notice the bottom left-hand corner will go from <code>-- INSERT --</code> to <em>blank</em>. Then type on your keyboard <code>:wq</code> and press enter. This is the command to save (or <em>write</em> to the disk <code>w</code>) and to quit the text editor (<code>q</code>).</p>
+
+<p><img src="./images/a07.png" alt="cat" width="500"/>  Then to check and make sure you entered the alias write, run the the command <code>cat .bashrc</code>. The <code>cat</code> command &ldquo;prints&rdquo; to your terminal all of the file contents. In our case this is contents of our <code>.bashrc</code> file. Keep Git Bash open for later steps.  </p></li>
+<li><p>The PATH varibles in windows may need to altered to include the PATH to our Anaconda Installation. This will make sure to link Anaconda commands with the Git Bash terminal.  </p>
+
+<p><img src="./images/a08.png" alt="search" width="500"/>  On keyboard press <kbd> Windows-key </kbd> or simply use the search bar on the taskbar if it is visible. Type in <code>Edit environment varibles for your account</code>. Click on the search result.  </p>
+
+<p><img src="./images/a09.png" alt="Path" width="500"/>  Under the first section &ldquo;User variables for [YOUR USERNAME]&rdquo; double click on the line that has <code>Path</code> under the <code>Varaible</code> column.  </p>
+
+<p><img src="./images/a10.png" alt="environment" width="500"/>  Here we can check and see all of the PATH variables for our terminal. You may notice Paths to Anaconda3 already entered in (except instead of my username &ldquo;bmcin&rdquo; you will have your own username). <em>If you have all of the Anaconda3 paths in this picture</em> (minus the one that starts with <code>%USERPROFILE%</code>) you are fine and can close out of these windows and skip to step 6. <em>If you do not have any/only partial of the Anaconda3 paths</em> (Again, minus the one that starts with <code>%USERPROFILE%</code>) then you will need to add these paths. The paths may vary by system if you saved Anaconda3 not in the default spot the Anaconda Installer suggested. Fortunately, we can use the path from the <code>where python</code> command we ran on the anaconda prompt in step 2 to get the paths we need.</p>
+
+<p><img src="./images/a11.png" alt="Add" width="500"/>  You will notice that the path from <code>where python</code> returns a path that has &ldquo;Anaconda3&rdquo; in the path. <code>C:\Users\bmcin\anaconda3\python.exe</code>. What you will want to do is copy everything up to &ldquo;anaconda3&rdquo; (<code>C:\Users\bmcin\anaconda3</code>). Then press the <code>New</code> button and then paste the path in there. Then add on whatever else is necessary to complete the path. You will need each of the following paths.<em>Note: [ANACONDA PATH] is the path you copied.</em></p>
+
+<ul>
+<li><code>[ANACONDA PATH]</code></li>
+<li><code>[ANACONDA PATH]\Scripts</code></li>
+<li><code>[ANACONDA PATH]\Library\bin</code></li>
+<li><code>[ANACONDA PATH]\Library\usr\bin</code></li>
+<li><code>[ANACONDA PATH]\Library\mingw-w64\bin</code></li>
+</ul>
+
+<p>Once finished adding the paths, press <code>OK</code> on the first window to close it, and press <code>OK</code> again to close the second window.</p></li>
+<li><p>To finish this out we will need to &ldquo;run&rdquo; the <code>.bashrc</code> file to apply our changes, and then check to make sure we are all set.  </p>
+
+<p><img src="./images/a12.png" alt="source" width="500"/>  In the Git Bash terminal, type and enter <code>source .bashrc</code>. This will apply the changes we made earlier to the file. If you encounter an error in this part or the next part, it is most likely you did not close your <code>&#39;</code> in your alias, you did not put a <code>/</code> in front of the <code>c</code>, or you spelled something wrong. Follow step 4 again.  </p>
+
+<p><img src="./images/a13.png" alt="python" width="500"/>  To test if everything was successful, in Git Bash type <code>python</code> and press enter, if all is well the terminal should appear as it does above. Currently you will be running the &ldquo;python interpreter&rdquo; which is a program that runs in your terminal.</p>
+
+<p><em>If successful, and the terminal looks like it does above</em> use the key combination <kbd> Ctrl </kbd> + <kbd> d </kbd> to quit out of the python interpreter. Then type in <code>exit</code> and hit enter, this will close the terminal.  </p>
+
+<p><em>If unsucessful, and nothing appears or there is an error</em> you can simply just simply close the terminal with the <code>X</code> in the top right corner.</p></li>
+</ol>
+
+<p><a id="startup"></a></p>
+
+<h4 id="toc_26">Changing startup location to Home directory</h4>
+
+<p>This next step is to ensure that when Git Bash starts up, you will load into the home directory (<code>~</code>) instead of the root directory (<code>/</code>). This will make it less likely for the file and folders in the root directory to be harmed, and proper file storage etiquette be followed.</p>
+
+<ol>
+<li><p>Close down the Git Bash terminal if open, and restart. You may notice a Warning in the terminal saying <code>.bash_profile</code> and other files are missing, you can saftely ignore this.  </p></li>
+<li><p>Navigate to the home directory and open <code>.bash_profile</code> in a text editor.  </p>
+
+<p><img src="./images/profile.png" alt="profile" width="500"/>  In the terminal type <code>cd ~</code> and press <code>Enter</code> to change your directory to the Home directory. Then type <code>vi .bash_profile</code> and press <code>Enter</code>. This will open the <code>.bash_profile</code> file that is used to run the <code>.bashrc</code> file that we edited earlier.  </p></li>
+<li><p>Add a line that changes the directory to home</p>
+
+<p><img src="./images/home_cd.png" alt="home_cd" width="500"/>  Press (lowercase)<code>i</code> on the keyboard. Then, using the down-arrow key <kbd> ↓ </kbd> on your keyboard move to the last possible line you can. You will notice the screen will flash if you are try pressing the down-arrow while on the last line. Then, using the right-arrow key <kbd> → </kbd> on your keyboard move to the end of the line. Again, you will notice the screen will flash if you are try pressing the right-arrow while at the end of the line. Then, on the keyboard press <code>Enter</code> and this should make a newline. Type <code>cd ~</code>. If done successfully, the file should look like this. <em>Note: if any of the lines above the <code>cd ~</code> were altered, this could break things. Make sure you did not alter any of those lines before continuing. If you did happen to mess them up, press <code>Esc</code> on the keyboard and then type <code>:q!</code> and press <code>Enter</code> this will not save any of the changes you made, and you can try editing it again.</em></p>
+
+<p><img src="./images/close_vim.png" alt="close_vim" width="500"/>  To save and close the file we will need to return back to the &ldquo;Command Mode&rdquo; to do this press the <code>Esc</code> on your keyboard. You will notice the bottom left-hand corner will go from <code>-- INSERT --</code> to <em>blank</em>. Then type on your keyboard <code>:wq</code> and press <code>Enter</code>. This is the command to save (or <em>write</em> to the disk <code>w</code>) and to quit the text editor (<code>q</code>).</p></li>
+<li><p>Test to make sure you start up in the home directory.</p>
+
+<p><img src="./images/test_home.png" alt="test_home" width="500"/>  First close down the Terminal. Then open it back up. If all went well you should start up in the Home directory. You can tell by looking here. If it has <code>~</code> then we are all-set.</p></li>
+</ol>
+
+<p><strong>Congrats you are done with setting up a terminal!</strong><br>
+<em>If at anypoint anything got too confusing or you were not successful, please let your instructor know during class or through email and they can work with you to resolve any issues.</em></p>
+
+<p><a id="git-mac"></a></p>
+
+<h3 id="toc_27">Install Git if you have a <strong>Mac</strong> computer:</h3>
+
+<p>As a Mac user, you may already have Git install on your computer since Mac You may already have Git installed on your computer.</p>
+
+<p>You can check if this is the case by opening the &ldquo;Terminal&rdquo; application (search for it in Spotlight if you don&rsquo;t know where it is by pressing <kbd> command </kbd> + <kbd> space-bar </kbd> or use the search bar in the top right corner search <code>terminal</code> and press <code>Enter</code>) and then type <code>git --version</code> and hit enter. Like so:</p>
+
+<p><img src="./images_mac/git_version.png" alt="git_version" width="500"/></p>
+
+<p>If you already have Git installed, it should tell you what version you have. If Git isn&rsquo;t installed, it will either tell you that it can&rsquo;t find Git, or it will ask if you want to install the &ldquo;Command Line Tools&rdquo; to install Git. You&rsquo;re welcome to use the version on you machine, or the version that Command Line Tools installs, but if you want the newest version of Git you&rsquo;ll have to install it yourself. Read on if you want to embark on this journey!</p>
+
+<p><a id="git-mac-install"></a></p>
+
+<h4 id="toc_28">Download and install the newest version of Git for Mac</h4>
+
+<ol>
+<li><p>First, you&rsquo;ll want to onstall <code>Homebrew</code>. Visit the <a href="https://brew.sh/">Homebrew main page</a> for instructions on how to install <code>Homebrew</code></p>
+
+<p><img src="./images_mac/hb.png" alt="homebrew" width="750"/> Copy and paste the terminal command into the terminal and press <code>Enter</code>.</p>
+
+<p><img src="./images_mac/hb_password.png" alt="hb_password" width="500"/>  Enter the password to your account and press <code>Enter</code>.  </p>
+
+<p><img src="./images_mac/hb_cont.png" alt="hb_cont" width="500"/>  To continue press the <code>Enter</code> button. This will take a moment to install everything necessary.</p>
+
+<p><img src="./images_mac/hb_cont_2.png" alt="hb_cont_2" width="500"/>  To continue enter your password. Press the <code>Enter</code> button.  </p>
+
+<p><img src="./images_mac/hb_cont_3.png" alt="hb_cont_3" width="500"/>  If sucessful you will now be done.</p></li>
+<li><p>In the terminal install git via homebrew.</p>
+
+<p><img src="./images_mac/git_brew.png" alt="git_brew" width="500"/>  Type in the terminal <code>brew install git</code>. Then press <code>Enter</code>.  </p>
+
+<p><img src="./images_mac/git_done.png" alt="git_done" width="500"/>  If successful, there should be no errors, to test type <code>git --version</code> and press <code>Enter</code>. You should then see a version.</p></li>
+</ol>
+
+<p><a id="git-linux"></a></p>
+
+<h3 id="toc_29">Install Git if you have a <strong>Linux</strong> computer:</h3>
+
+<p>In the &ldquo;Console&rdquo; application, use the appropriate command from this page: <a href="https://git-scm.com/download/linux">https://git-scm.com/download/linux</a></p>
+
+<p>Once you finish the installation process, you should be able to open the Console and run <code>git --version</code> to see if Git has been successfully installed.</p>
+
+<p><a id="atom"></a></p>
+
+<h2 id="toc_30">Installing the Atom text editor</h2>
+
+<p>In this course you may be expected to work outside of Jupyter notebooks to write Python scripts from time to time, which you&rsquo;ll run from the Command Line Interface. In order to write these scripts, you&rsquo;ll need to be comfortable using a text editor. If you don&rsquo;t already have a good text editor that you prefer using you can use one of the system defaults, but if you&rsquo;d like to try another options, Atom can be a good choice. To install Atom, go to <a href="https://atom.io/">https://atom.io/</a> and download the version appropriate for your computer.</p>
+
+<p>You may wish to read through the installation information specific to your operating system:</p>
+
+<p><strong>Windows</strong>: <a href="http://flight-manual.atom.io/getting-started/sections/installing-atom/#platform-windows">http://flight-manual.atom.io/getting-started/sections/installing-atom/#platform-windows</a></p>
+
+<p><strong>Mac</strong>: <a href="http://flight-manual.atom.io/getting-started/sections/installing-atom/#platform-mac">http://flight-manual.atom.io/getting-started/sections/installing-atom/#platform-mac</a></p>
+
+<p><strong>Linux</strong>: <a href="http://flight-manual.atom.io/getting-started/sections/installing-atom/#platform-linux">http://flight-manual.atom.io/getting-started/sections/installing-atom/#platform-linux</a></p>
+
+<hr>
+
+<h1 id="toc_31">That&rsquo;s it! We look forward to seeing you in class!</h1>
+
+
+
+<script type="text/x-mathjax-config">
+(function () {
+
+MathJax.Hub.Config({
+	'showProcessingMessages': false,
+	'messageStyle': 'none'
+});
+
+if (typeof MathJaxListener !== 'undefined') {
+	MathJax.Hub.Register.StartupHook('End', function () {
+		MathJaxListener.invokeCallbackForKey_('End');
+	});
+}
+
+})();
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+</body>
+
+</html>
