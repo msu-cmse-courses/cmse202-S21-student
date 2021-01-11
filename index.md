@@ -11,7 +11,8 @@ Here are some quick links to important course content:
 
 *  [Office Hours Schedule](https://cmse.msu.edu/cmse202-office-hours)
 	* The Zoom room for TA/LA help room hours is [here](https://msu.zoom.us/j/94400474949).
-	* Contact your course instructor for their Zoom room for office hours.  
+	* Contact your course instructor for their Zoom room for office hours.
+	* See the bottom of this page for an embedded version.
 
 * [Software Setup Guide](/course_documents/SoftwareSetupGuide.html)
 
@@ -62,7 +63,10 @@ Anna Yannakopoulos (Section 004),
 
 ---  
 
-## Additional Reference materials
+## Office hours/Help room calendar
 
+Unless otherwise specified in the individual date on the following calendar all helpdesk hours will be conducted in the following zoom room:
 
-More stuff might show up here later!
+- [CMSE 202 Zoom TA/LA Help Room](https://msu.zoom.us/j/94400474949) (944 0047 4949)
+
+<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=Y181aTRnNTY3NHBuNjJwcTk5cmNlMG0xbHZtZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23D50000&amp;mode=WEEK" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
