@@ -65,8 +65,10 @@ Anna Yannakopoulos (Section 004),
 
 ## Office hours/Help room calendar
 
-Unless otherwise specified in the individual date on the following calendar all helpdesk hours will be conducted in the following zoom room:
+Help room hours for all CMSE 202 TAs and LAs will be conducted in the following zoom room:
 
 - [CMSE 202 Zoom TA/LA Help Room](https://msu.zoom.us/j/94400474949) (944 0047 4949)
+
+Office hour Zoom links for CMSE 202 Course Instructors will be unique to each instructor. Contact you instructor if you cannot find their link!
 
 <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=Y181aTRnNTY3NHBuNjJwcTk5cmNlMG0xbHZtZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23D50000&amp;mode=WEEK" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
