@@ -3,6 +3,9 @@
 # Routine to calculate the first N Fibonacci numbers, where
 #   F_n = F_{n-1} + F_{n-2}, and the first two numbers are 0,1.
 #
+# Note: if you're not familiar with the equation above,
+# try copying and pasting it here: http://latex2png.com/
+#
 # The sequence *should* be: 0, 1, 1, 2, 3, 5, 8, 13, 21, ...
 #
 # It is currently broken, fix it!
@@ -16,7 +19,7 @@ def main():
     high_num = 1
 
     print(low_num)
-    
+
     for i in range(10):
         print(high_num)
 
