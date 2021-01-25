@@ -5,7 +5,7 @@
 
 Here are some quick links to important course content:  
 
-*  [Course Syllabus](https://docs.google.com/document/d/e/2PACX-1vRBse-tzqOOb8LMWHDCDXpam6Z0v_ynEORPALQMF-8ysVDoRoRtMlLWjXR5s4ln__fXYKR_5IGUqQm9/pub)
+*  [Course Syllabus](https://docs.google.com/document/d/e/2PACX-1vRBse-tzqOOb8LMWHDCDXpam6Z0v_ynEORPALQMF-8ysVDoRoRtMlLWjXR5s4ln__fXYKR_5IGUqQm9/pub) [[PDF version](/course_documents/CMSE202_Syllabus_Spring2021.pdf)]
 
 *  [Course Calendar](https://docs.google.com/spreadsheets/d/e/2PACX-1vQz6_LrNMuMSpiFJ6-of3NnEGbjKWFYqaTJL_JAY1ZAKNFpHhk2yu5SwvfJWTF3T0urCo9PBE2U7OKp/pubhtml?gid=2078679908&single=true)
 
