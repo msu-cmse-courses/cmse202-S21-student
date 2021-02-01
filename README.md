@@ -5,6 +5,7 @@ This is the **student Git repository** for CMSE 202. It contains the core materi
 
 * course_documents/ -- logistical documents like the syllabus and the course calendar
 * code_samples/ -- code snippets and scripts that might occasionally be used in class
+* data/ -- data files used in assignments
 * project/ -- semester project information
 
 This repository may be updated as the course progresses.
