@@ -16,6 +16,8 @@ Here are some quick links to important course content:
 
 * [Software Setup Guide](/course_documents/SoftwareSetupGuide.html)
 
+* [Semester Project Details](/course_documents/semester_project_details.pdf)
+
 Course assignments will be distributed via [Desire 2 Learn](https://d2l.msu.edu/).
 
 General course discussion and assistance will be held in the `#cmse202-s21-help` channel on the [CMSE Slack space](https://cmse-courses.slack.com). There are also section specific channels in the format of `#cmse202-###-s21` where "###" corresponds to the section number.
