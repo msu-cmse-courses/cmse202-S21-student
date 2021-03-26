@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>CMSE202_FinalProjectRequirementsAndGradingRubric</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">CMSE 202 Final Project</h1>
+
+<h2 id="toc_1">Requirements and Grading Rubric</h2>
+
+<h2 id="toc_2">Overall requirements</h2>
+
+<p>Each presentation should be <strong>no more than 12 minutes</strong> long and should include appropriate <strong>visual aids</strong>. The presentation should be <strong>divided roughly evenly between all group members</strong> (i.e. one person shouldn&rsquo;t do all of the talking). <strong>You will submit your presentation in the form of a recording</strong>. You should be able to record your presentation by logging into a Zoom meeting as a group and hitting the &ldquo;Record&rdquo; button. You should test this out in advance and make sure you understand how to record your presentation via Zoom. You may also want to review the Zoom documentation <a href="https://support.zoom.us/hc/en-us/articles/201362473-Local-recording">available online</a>. If you would prefer to use another platform to record your presentation, you are welcome to do so, but your instructor may not be able to help you if you run into issues.</p>
+
+<p>Your presentation should address:</p>
+
+<ul>
+<li>The <strong>question(s)</strong> you set out to answer.</li>
+<li>The <strong>model</strong>, expressed in broad mathematical terms, that you applied to your chosen data or chosen topic.</li>
+<li>The <strong>computational techniques</strong> that you used to analyze your data or run your model. This should include an explanation of any pre-existing python-based libraries or packages that you used to aid in your project.</li>
+<li>The <strong>answer(s)</strong> you arrived at.</li>
+<li>The <strong>difficulties or complications</strong> you ran into with your project and what you did to try to cover overcome these difficulties.</li>
+</ul>
+
+<p><strong>You will submit your recording to the Project submission folder available on D2L</strong>. Every member of the group should submit a copy of the recording.</p>
+
+<h3 id="toc_3">Talk slides</h3>
+
+<p>It is recommended that you create your slides using Google Slides so that you can more easily collaborate on the slides with your group members, but you are allowed to use another format if there is one that you prefer. Once you&rsquo;ve completed your slides, <strong>you should also upload a copy of them to D2L using the Project submission folder</strong>. Every member of the group should submit a copy of the slides.</p>
+
+<p>You should aim for having a reasonable number of slides &ndash; a good rule of thumb is ~1 min of time per slide. You should avoid having more than 15 slides for a presentation of this length. In addition, make sure you have enough slides to support your presentation. If you have too few slides you might either have too much content per slide or you don&rsquo;t have enough content in total. <strong>The slides should</strong>:</p>
+
+<ul>
+<li>Address the above points in a logical order.</li>
+<li>Include a title slide with your project title, name, and course number (with section number).</li>
+<li>Effectively communicate information through a combination of text and figures. Text and figures should be legible (even from the back of the room!).</li>
+<li>Only include text and figures that support the presentation (avoid including content &ldquo;just because&rdquo;).</li>
+<li>Avoid large paragraphs of text, use bullet points instead.</li>
+</ul>
+
+<p>You may also wish to show a live coding demonstration as part of your presentation. This is perfectly acceptable but make sure that you presentation still fits within the <strong>12-minute limit</strong>.</p>
+
+<h3 id="toc_4">Code requirements</h3>
+
+<p>All code used for the project should be committed to a <strong>private</strong> GitHub repository that is shared with the instructors. <strong>The code should be well-documented and include a README.md file in the GitHub repository that explains how to run the code and a description for what each group member contributed to the overall project</strong>. Well-documented code should include comments to explain what the code is doing and <a href="https://en.wikipedia.org/wiki/Docstring">docstrings</a> for functions and classes. You should also make sure that the variable names are chosen so that the instructor can make sense of your code.</p>
+
+<h2 id="toc_5">Grading</h2>
+
+<p>The oral presentation, slides, and project code should address all of the points outlined in the &ldquo;Overall Requirements&rdquo; above. The project will be graded as follows:</p>
+
+<h3 id="toc_6">Presentation</h3>
+
+<ul>
+<li>30% of the grade (<strong>30 points</strong>) comes from the oral presentation and slides. Is it clear and well-structured? Does the student effectively communicate the key ideas about their results? Do the slides complement their oral presentation, and conform to the guidelines?</li>
+</ul>
+
+<blockquote>
+<h4 id="toc_7">Examples of presentation performance</h4>
+
+<ul>
+<li><em>Excellent presentation</em>: student speaks clearly and in a logical manner, and makes their key points clear. They use eye contact and minimally use notes. Slides conform to specifications in final presentation document, including number of slides, adequately addressing all points, legibility. Slides complement oral presentation. (<strong>30 points</strong>)</li>
+<li><em>Good presentation</em>: student speaks clearly and logically and conveys key points, but presentation is somewhat lacking (heavy use of notes; moderate eye contact, etc.) Slides deviate from specifications in some minor way: too many or too few slides, not all points addressed, some slides hard to understand (poor graphics, too much or too little text, etc.) (<strong>22 points</strong>)</li>
+<li><em>Fair presentation</em>: student&rsquo;s oral presentation is substantially lacking: little eye contact, speaking too quietly to be heard or with little inflection, clarity/logical flow in speaking is sub-par, etc. Slides deviate from specifications in some substantial way: too many or too few slides, half or fewer of points addressed, most slides hard to understand (poor graphics, too much or too little text, etc.)  (<strong>14 points</strong>)</li>
+<li><em>Poor presentation</em>: student&rsquo;s oral presentation is completely lacking: little to no eye contact, cannot be heard, there is no logical progression to the presentation. Slides do not conform to specifications in any meaningful way. (<strong>6 points</strong>)</li>
+</ul>
+</blockquote>
+
+<h3 id="toc_8">Demonstration of content knowledge and computational skills</h3>
+
+<ul>
+<li>30% of the grade (<strong>30 points</strong>) comes from the content of the student&rsquo;s presentation and in the code developed. Did the students approach a specfic question in a scientific way? Did the students compare and contrast two or three different but appropriate techniques? Are the results (positive or negative!) presented in a clear and convincing manner? This section is subdivided into two categories: computational techniques and visualization.<br>
+
+<ul>
+<li>Computational Tools (<strong>20 pts</strong>): Which tool(s) did you use to solve your problem? Did you use the correct tool to answer your scienctific question? Your choice of tools should be justified in your presentation.</li>
+<li>Visualization (<strong>10 pts</strong>): Are your results clearly displayed?  Are the visualizations easy to digest for someone not familiar with the project? Do the visualizations effectively demonstrate some point?</li>
+</ul></li>
+</ul>
+
+<blockquote>
+<h4 id="toc_9">Examples of content knowledge and skills demonstration</h4>
+
+<ul>
+<li><em>Excellent presentation</em>: the students pose a specific question with a measureable outcome and use a few different techniques to try to answer the question. The students explain why the chosen techniques are appropriate for answering the proposed question, and compare how the two techniques performed. The graphs are well labeled and helper text is added to the figures to highlight important parts of the figure. (<strong>30 points</strong>)</li>
+<li><em>Good presentation</em>: the students pose a specific question with an unclear metric and a few different techniques to try to answer the question, but one of the techniques is not appropriate for the problem. The students briefly explain why they chose the techniques, but do not compare the techniques. The graphs have labeled axes and legends. (<strong>22 points</strong>)</li>
+<li><em>Fair presentation</em>: the students use a single technique to try to answer a question that isn&rsquo;t well defined. The students briefly explain why they chose the technique. The graphs simply show raw data or are not labeled. (<strong>14 points</strong>)</li>
+<li><em>Poor presentation</em>: the students forego computational tools and try to answer a poorly-defined question using graphs and intuition. (<strong>6 points</strong>)</li>
+</ul>
+</blockquote>
+
+<h3 id="toc_10">Collaboration</h3>
+
+<ul>
+<li>20% of the grade (<strong>20 points</strong>) comes from working together effectively. This grade is individual to each team member.  Team members that worked well with the group will get a much higher grade than students who refused to meet or take on tasks. 
+
+<ul>
+<li>Balancing the workload: Was the work effectively distributed among all team members? Did each team member contribute meaningfully?</li>
+<li>Use of collaborative code development tools: Did you leverage version control software to aid in code development between group members? Are your commits descriptive?  Did you manage merge conflicts successfully? Does each team member have at least a few commits (not necessarily in equal quantity)?</li>
+</ul></li>
+</ul>
+
+<h3 id="toc_11">Good coding practices</h3>
+
+<ul>
+<li>20% of the grade (<strong>20 points</strong>) comes from the quality of the code that is written. In addition, your instructor should be able to use the README to understand how to appropriately run your code.
+
+<ul>
+<li>Does the code have adequate comments? Do the variable names make sense? Do function and classes have Docstrings? Your instructor should be able to read through your code and understand what it is doing and why. Is the data managed effectively and efficiency such that it is easy to understand how the data is being manipulated? Are variables clearly identified? Are appropriate data types used (dictionaries vs. numpy arrays etc.) ? Look at past examples of code to get a sense for the level of detail you should include. </li>
+</ul></li>
+</ul>
+
+
+
+<script type="text/x-mathjax-config">
+(function () {
+
+MathJax.Hub.Config({
+	'showProcessingMessages': false,
+	'messageStyle': 'none'
+});
+
+if (typeof MathJaxListener !== 'undefined') {
+	MathJax.Hub.Register.StartupHook('End', function () {
+		MathJaxListener.invokeCallbackForKey_('End');
+	});
+}
+
+})();
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+</body>
+
+</html>
